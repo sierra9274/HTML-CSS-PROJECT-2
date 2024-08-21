@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.navbar-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 20px;
+}
+.grow-list{
+    display: flex;
+    align-items: center;
+    /* flex-grow: 1; */
+}
+.list{
+    display: flex;
+    list-style-type: none;
+    margin: 10px 20px 5px 30 ;
+    padding: 10px;
+    gap: 50px;
+}
+.list-item{
+    margin: 0 10px;
+    font-weight: 500;
+    cursor:pointer;
+    color: #555;
+}
+.nav-button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #6c63ff;
+    color:#fff;
+    cursor:pointer;
+    border: none;
+}
+.banner-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 400px;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+.heading-text{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    /* text-align: center; */
+}
+.heading-text span{
+    color:#6c63ff;
+}
+.description{
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 20px 0;
+}
+.banner-container img{
+    width: 100%;
+    max-width: 600px;
+}
+
+/* responsive */
+@madia(max-width: 760px){
+    .banner-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-container img{
+        margin-top: 30px;
+    }
+    .heading-text{
+        font-size: 2.5rem;
+    }
+}
